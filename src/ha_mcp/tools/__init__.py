@@ -16,6 +16,8 @@ from ha_mcp.tools.integration import register_integration_tools
 from ha_mcp.tools.backup import register_backup_tools
 from ha_mcp.tools.control import register_control_tools
 from ha_mcp.tools.events import register_event_tools
+from ha_mcp.tools.traces import register_trace_tools
+
 
 
 def register_all_tools(mcp):
@@ -36,3 +38,4 @@ def register_all_tools(mcp):
     register_backup_tools(mcp)
     register_control_tools(mcp)
     register_event_tools(mcp)
+    register_trace_tools(mcp)
