@@ -32,8 +32,8 @@ based on your setup.
   window (e.g. to watch what a device does)
 - **State inspection** -- read entity states, history, logbook
   entries, error logs, and render Jinja2 templates
-- **Automation management** -- full CRUD, toggle, duplicate, and
-  conflict detection for automations
+- **Automation management** -- full CRUD, toggle, duplicate,
+  execution-trace debugging, and conflict detection for automations
 - **Script management** -- create, read, update, and delete scripts
 - **Scene management** -- create, read, update, and delete scenes
 - **Helper management** -- create, update, and delete input helpers

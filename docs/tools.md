@@ -128,6 +128,12 @@ Full CRUD operations for Home Assistant automations.
 List all automations with their ID, alias, state, and
 `last_triggered` timestamp. No parameters.
 
+### `get_automation_traces`
+
+Fetch every stored execution trace for every automation. The response
+groups full trace data by automation, including execution paths,
+evaluated variables, and action results. No parameters.
+
 ### `get_automation`
 
 Get the full configuration of a single automation.
