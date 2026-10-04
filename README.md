@@ -249,7 +249,7 @@ For detailed configuration guidance, see
 
 - [Configuration](docs/configuration.md) -- environment variables,
   transport options, and client setup
-- [Tools reference](docs/tools.md) -- all 59 MCP tools with
+- [Tools reference](docs/tools.md) -- all 85 MCP tools with
   parameters and descriptions
 - [Prompts reference](docs/prompts.md) -- guided workflow
   templates

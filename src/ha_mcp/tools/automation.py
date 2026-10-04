@@ -18,7 +18,7 @@ def register_automation_tools(mcp_server):
     """Register all automation management tools on the MCP server."""
 
     @mcp_server.tool()
-    async def get_automation_traces(ctx: Context) -> str:
+    async def get_all_automation_traces(ctx: Context) -> str:
         """Fetch every stored execution trace for every Home Assistant automation.
 
         Returns the full trace data, grouped by automation, including each

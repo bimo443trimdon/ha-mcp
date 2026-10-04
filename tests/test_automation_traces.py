@@ -56,12 +56,12 @@ class _FakeMCPServer:
         return register
 
 
-async def test_get_automation_traces_fetches_all_runs_for_all_automations():
+async def test_get_all_automation_traces_fetches_all_runs_for_all_automations():
     ws = _FakeWebSocketClient()
     server = _FakeMCPServer()
     register_automation_tools(server)
 
-    result = await server.tools["get_automation_traces"](
+    result = await server.tools["get_all_automation_traces"](
         _FakeContext(ws, _FakeRestClient())
     )
 
@@ -78,7 +78,7 @@ async def test_get_automation_traces_fetches_all_runs_for_all_automations():
     assert '"path": "action/0"' in result
 
 
-async def test_get_automation_traces_reports_missing_internal_id():
+async def test_get_all_automation_traces_reports_missing_internal_id():
     class _MissingIdRestClient:
         async def get_states(self):
             return [{"entity_id": "automation.no_id", "attributes": {}}]
@@ -87,6 +87,6 @@ async def test_get_automation_traces_reports_missing_internal_id():
     register_automation_tools(server)
 
     with pytest.raises(ValueError, match="automation.no_id"):
-        await server.tools["get_automation_traces"](
+        await server.tools["get_all_automation_traces"](
             _FakeContext(_FakeWebSocketClient(), _MissingIdRestClient())
         )
