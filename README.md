@@ -39,6 +39,11 @@ based on your setup.
 - **Helper management** -- create, update, and delete input helpers
   (`input_boolean`, `input_number`, `input_text`, `input_select`,
   `input_datetime`, `input_button`)
+- **Timer management** -- create timer helpers in Home Assistant
+- **Template sensor management** -- create UI-managed Template sensors
+  and binary sensors
+- **Group and Integral Sensor helpers** -- create UI-managed entity
+  groups and Riemann-sum integral sensors
 - **Dashboard management** -- manage Lovelace dashboards, views,
   and cards
 - **Blueprint management** -- list, import, and create automations
@@ -244,7 +249,7 @@ For detailed configuration guidance, see
 
 - [Configuration](docs/configuration.md) -- environment variables,
   transport options, and client setup
-- [Tools reference](docs/tools.md) -- all 54 MCP tools with
+- [Tools reference](docs/tools.md) -- all 59 MCP tools with
   parameters and descriptions
 - [Prompts reference](docs/prompts.md) -- guided workflow
   templates

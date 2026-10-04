@@ -7,6 +7,9 @@ from ha_mcp.tools.automation import register_automation_tools
 from ha_mcp.tools.script import register_script_tools
 from ha_mcp.tools.scene import register_scene_tools
 from ha_mcp.tools.helper import register_helper_tools
+from ha_mcp.tools.timer import register_timer_tools
+from ha_mcp.tools.template_entity import register_template_entity_tools
+from ha_mcp.tools.ui_helpers import register_ui_helper_tools
 from ha_mcp.tools.dashboard import register_dashboard_tools
 from ha_mcp.tools.blueprint import register_blueprint_tools
 from ha_mcp.tools.config_validation import register_config_validation_tools
@@ -29,6 +32,9 @@ def register_all_tools(mcp):
     register_script_tools(mcp)
     register_scene_tools(mcp)
     register_helper_tools(mcp)
+    register_timer_tools(mcp)
+    register_template_entity_tools(mcp)
+    register_ui_helper_tools(mcp)
     register_dashboard_tools(mcp)
     register_blueprint_tools(mcp)
     register_config_validation_tools(mcp)

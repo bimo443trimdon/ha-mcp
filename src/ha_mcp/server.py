@@ -32,7 +32,8 @@ mcp = FastMCP(
     "Home Assistant MCP",
     instructions=(
         "This MCP server provides tools for managing Home Assistant - "
-        "automations, scripts, scenes, helpers, dashboards, and blueprints, "
+        "automations, scripts, scenes, helpers, timers, Template sensors, "
+        "groups, and Integral Sensors, dashboards, and blueprints, "
         "plus the device/entity/area/floor/label registries (read and write). "
         "It can read device/entity states, suggest missing automations, manage "
         "integrations, list and create backups, reload domains and restart core, "
